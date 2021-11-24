@@ -1,0 +1,125 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": ["babel", "react"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "decorators": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": false,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "block-scoped-var": 2,
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "camelcase": 2,
+    "comma-dangle": [2, "always-multiline"],
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "comma-style": [2, "last"],
+    "indent": [2, 2, {
+      "SwitchCase": 1
+    }],
+    "init-declarations" : [2, "always"],
+    "jsx-quotes": [2, "prefer-single"],
+    "keyword-spacing": [2,
+        {
+            "before": false,
+            "after": true,
+            "overrides": {
+                "else" : { "before": true },
+                "from" : { "before": true },
+                "catch" : { "before": true },
+                "as" : { "before": true },
+                "return": {"before": true, "after": true}
+            }
+        }
+    ],
+    "new-cap": 0,
+    "no-alert": 2,
+    "no-console": 1,
+    "no-debugger": 2,
+    "no-dupe-keys": 2,
+    "no-empty": 2,
+    "no-extra-semi": 2,
+    "no-inline-comments": 0,
+    "no-irregular-whitespace": 2,
+    "no-lonely-if": 0,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-multiple-empty-lines": 2,
+    "no-new": 1,
+    "no-self-compare": 2,
+    "no-undef": 2,
+    "no-shadow": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": [1],
+    "no-unused-vars": [1, {
+      "vars": "local",
+      "args": "after-used"
+    }],
+    "no-var": 2,
+    "one-var": [2, "never"],
+    "object-curly-spacing": [2, "always"],
+    "prefer-const": 2,
+    "padded-blocks": [2, "never"],
+    "quotes": [2, "single"],
+    "radix": 2,
+    "space-before-blocks": [2, "always"],
+    "space-before-function-paren": [2, "never"],
+    "space-in-brackets": 0,
+    "space-infix-ops": 2,
+    "spaced-comment": [2, "always"],
+    "strict": [2, "never"],
+    "vars-on-top": 2,
+    "react/display-name": 0,
+    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-max-props-per-line": [2, { "maximum": 2 }],
+    "react/jsx-no-duplicate-props": [2],
+    "react/jsx-no-undef": 2,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 0,
+    // Mi cambio
+    "react/prop-types": "off",
+    "react/forbid-prop-types": "off",
+    // "react/no-multi-comp": 2,
+    "react/no-multi-comp":  0,
+    // End    "react/no-multi-comp": 2,
+    "react/no-unknown-property": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/self-closing-comp": [2, {
+      "component": true,
+      "html": false
+    }],
+    "react/sort-comp": [2, {
+      "order": [
+        "lifecycle",
+        "render",
+        "everything-else"
+      ]
+    }],
+    "react/jsx-wrap-multilines": [2, {"declaration": false}]
+  }
+}
